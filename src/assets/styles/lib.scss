@@ -1,0 +1,58 @@
+// Colors
+$BLACK: #090909;
+$WHITE: #dedede;
+$GRAY: #a1a1a1;
+$ACCENT: #91ef58;
+$DARK_ACCENT: #4f872d;
+
+// Fonts
+@font-face {
+    font-family: Gracheva;
+    src: url(../fonts/GRACHEVA.OTF);
+}
+@font-face {
+    font-family: Spacer;
+    src: url(../fonts/SPACERR-REGULAR.TTF);
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/QUICKSAND-VARIABLEFONT_WGHT.TTF);
+}
+
+// Mixins
+@mixin h2 {
+    font-family: Spacer;
+    font-size: 26px;
+    color: $WHITE;
+
+    span {
+        color: $ACCENT;
+    }
+}
+@mixin a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+@mixin icons {
+    font-size: 30px;
+    color: $ACCENT;
+}
+@mixin centerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+@mixin centerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+@mixin fullSize {
+    width: 100%;
+    height: 100%;
+}

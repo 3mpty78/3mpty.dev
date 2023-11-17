@@ -1,7 +1,8 @@
 import React from "react";
 
 // Import de l'image de texture
-import texture from "../assets/img/texture.png";
+// import texture from "../assets/img/texture.png";
+import texture from "../assets/img/gifTexture.gif";
 import { Parallax } from "react-scroll-parallax";
 
 export default function Slogan() {

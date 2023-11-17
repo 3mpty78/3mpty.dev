@@ -273,6 +273,8 @@ nav {
                 height: 90px;
                 object-fit: cover;
                 border-radius: 120px;
+                filter: brightness(1.5) saturate(2) hue-rotate(-30deg)
+                    contrast(1.2) drop-shadow(0 0 10px $BLACK);
             }
         }
 

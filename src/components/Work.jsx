@@ -3,7 +3,7 @@ import React from "react";
 // Import des mockups des projets
 import ronan from "../assets/img/mockups/ronan.png";
 import empty7 from "../assets/img/mockups/empty.png";
-import jeunepauvre from "../assets/img/mockups/ypa_2.png";
+import jeunepauvre from "../assets/img/mockups/ypa-3.png";
 import baudic from "../assets/img/mockups/baudic_3.png";
 
 const projects = [

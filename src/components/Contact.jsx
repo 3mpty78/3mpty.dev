@@ -44,6 +44,7 @@ const socials = [
 export default function Contact() {
     return (
         <div id="contact">
+            {/* <div className="blob"></div> */}
             <h2>
                 Let's <span>connect</span>
             </h2>

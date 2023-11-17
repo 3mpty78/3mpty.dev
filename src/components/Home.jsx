@@ -2,6 +2,7 @@ import React from "react";
 
 // Import des images
 import texture from "../assets/img/texture.png";
+
 import profilPicture from "../assets/img/ProfilPicture.png";
 import { Parallax } from "react-scroll-parallax";
 

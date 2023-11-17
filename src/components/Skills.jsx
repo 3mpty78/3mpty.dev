@@ -1,10 +1,5 @@
-import React, { useEffect } from "react";
-
-// Import splide
-
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import "@splidejs/splide/dist/css/splide.min.css";
+import React from "react";
+import Marquee from "react-fast-marquee";
 
 // Import des icons
 import { FaFigma, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
@@ -17,8 +12,8 @@ import {
 import { IoLogoJavascript } from "react-icons/io5";
 
 const iconStyle = {
-    width: "30px",
-    height: "30px",
+    width: "50px",
+    height: "50px",
 };
 
 // Tableau de skills
@@ -66,51 +61,22 @@ const devSkills = [
 export default function Skills() {
     return (
         <div id="skills">
-            <Splide
-                options={{
-                    type: "loop",
-                    drag: "free",
-                    arrows: false,
-                    pagination: false,
-                    perPage: 5,
-                    autoScroll: {
-                        pauseOnHover: false,
-                        pauseOnFocus: false,
-                        rewind: false,
-                        speed: -1,
-                    },
-                }}
-                extensions={{ AutoScroll }}>
+            <Marquee autoFill={true} className="marquee">
                 {designSkills.map((skill, id) => (
-                    <SplideSlide className="item" key={id}>
+                    <div className="item" key={id}>
                         <div className="icon">{skill.icon}</div>
                         <p>{skill.name}</p>
-                    </SplideSlide>
+                    </div>
                 ))}
-            </Splide>
-            <Splide
-                options={{
-                    type: "loop",
-                    gap: 0,
-                    drag: "free",
-                    arrows: false,
-                    pagination: false,
-                    perPage: 5,
-                    autoScroll: {
-                        pauseOnHover: false,
-                        pauseOnFocus: false,
-                        rewind: true,
-                        speed: 1,
-                    },
-                }}
-                extensions={{ AutoScroll }}>
+            </Marquee>
+            <Marquee autoFill={true} direction="right" className="marquee">
                 {devSkills.map((skill, id) => (
-                    <SplideSlide className="item" key={id}>
+                    <div className="item" key={id}>
                         <div className="icon">{skill.icon}</div>
                         <p>{skill.name}</p>
-                    </SplideSlide>
+                    </div>
                 ))}
-            </Splide>
+            </Marquee>
         </div>
     );
 }

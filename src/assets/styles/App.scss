@@ -33,6 +33,27 @@ nav {
     }
 }
 
+// Cursor style
+#dot {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $ACCENT;
+    border-radius: 100%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.dot {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: $ACCENT;
+    border-radius: 100%;
+    pointer-events: none;
+    transition: 1.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
 // Homepage style
 .blob {
     position: absolute;
@@ -277,21 +298,115 @@ nav {
     gap: 60px;
     overflow-x: hidden;
 
-    .item {
+    .marquee {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 30px 0;
+
+        &:nth-child(1) {
+            border-top: 1px solid $GRAY;
+        }
+        &:nth-child(2) {
+            border-bottom: 1px solid $GRAY;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 0 120px;
+
+            p {
+                font-family: Gracheva;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// Contact page style
+#contact {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 240px;
+
+    h2 {
+        font-family: SPACER R;
+        font-size: 120px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+        span {
+            color: $ACCENT;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        a {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            p {
+                font-family: Gracheva;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .images {
+        position: relative;
+        width: 500px;
+        height: 500px;
+
+        .first {
+            @include fullSize();
+            box-shadow: 0 0 20px black;
+
+            img {
+                @include fullSize();
+                object-fit: cover;
+            }
+        }
+
+        .second {
+            @include fullSize();
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            background: $BLACK;
+            box-shadow: 0 0 20px $BLACK;
+
+            img {
+                @include fullSize();
+                object-fit: cover;
+                opacity: 0.25;
+            }
+        }
+    }
+
+    .cathy {
+        position: absolute;
+        bottom: 30px;
+        left: 240px;
+        display: flex;
         gap: 30px;
-        height: 120px;
+        align-items: center;
 
-        .icon {
-            width: 30px;
-            height: 30px;
-            @include centerColumn();
+        p {
+            font-family: Raleway;
 
-            .icon_img {
-                width: 100%;
-                height: 100%;
+            span {
+                font-family: Gracheva;
+                color: $ACCENT;
+                cursor: pointer;
             }
         }
     }

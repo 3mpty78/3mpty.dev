@@ -12,7 +12,7 @@ export default function Slogan() {
                     <p>crafting apps</p>
                     <img src={texture} alt="Texture image" />
                 </Parallax>
-                <Parallax speed={5} className="line2">
+                <Parallax speed={15} className="line2">
                     <p>Inspiring Visions</p>
                     <img src={texture} alt="Texture image" />
                 </Parallax>

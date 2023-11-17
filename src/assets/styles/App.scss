@@ -42,16 +42,16 @@ nav {
     border-radius: 100%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    transition: 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 .dot {
     position: fixed;
     width: 5px;
     height: 5px;
-    background: $ACCENT;
+    background: $WHITE;
     border-radius: 100%;
     pointer-events: none;
-    transition: 1.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 // Homepage style
@@ -222,8 +222,8 @@ nav {
                 background-color: $ACCENT;
 
                 &:hover img {
-                    bottom: 30px;
-                    left: 30px;
+                    bottom: 15px;
+                    left: 15px;
                 }
 
                 img {
@@ -389,7 +389,7 @@ nav {
             img {
                 @include fullSize();
                 object-fit: cover;
-                opacity: 0.25;
+                opacity: 0.15;
             }
         }
     }

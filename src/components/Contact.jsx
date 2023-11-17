@@ -2,7 +2,8 @@ import React from "react";
 
 // Import des images
 import texture from "../assets/img/texture.png";
-import spike from "../assets/img/spike.png";
+// import spike from "../assets/img/spike.png";
+import spike from "../assets/img/gif/spikeGif_dotted.gif";
 
 // Import des icons
 import { FiGithub } from "react-icons/fi";

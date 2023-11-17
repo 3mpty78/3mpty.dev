@@ -7,7 +7,7 @@ const navLInks = [
     },
     {
         name: "contact_",
-        link: "#",
+        link: "#contact",
     },
 ];
 

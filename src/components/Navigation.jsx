@@ -3,7 +3,7 @@ import React from "react";
 const navLInks = [
     {
         name: "projects_",
-        link: "#",
+        link: "#work",
     },
     {
         name: "contact_",

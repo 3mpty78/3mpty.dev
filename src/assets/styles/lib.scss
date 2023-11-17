@@ -15,8 +15,8 @@ $DARK_ACCENT: #4f872d;
     src: url(../fonts/SPACERR-REGULAR.TTF);
 }
 @font-face {
-    font-family: Quicksand;
-    src: url(../fonts/QUICKSAND-VARIABLEFONT_WGHT.TTF);
+    font-family: Raleway;
+    src: url(../fonts/RALEWAY-VARIABLEFONT_WGHT.TTF);
 }
 
 // Mixins
@@ -24,6 +24,9 @@ $DARK_ACCENT: #4f872d;
     font-family: Spacer;
     font-size: 26px;
     color: $WHITE;
+    position: absolute;
+    top: 30px;
+    left: 30px;
 
     span {
         color: $ACCENT;

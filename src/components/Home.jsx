@@ -8,7 +8,6 @@ import profilPicture from "../assets/img/ProfilPicture.png";
 export default function Home() {
     return (
         <>
-            <div className="blob"></div>
             <div id="home">
                 <div className="title">
                     <h1>

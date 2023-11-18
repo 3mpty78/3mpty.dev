@@ -16,6 +16,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 10;
+    mix-blend-mode: difference;
 
     ul {
         @include fullSize();
@@ -28,7 +29,6 @@ nav {
             font-size: 18px;
             color: $WHITE;
             transition: 0.2s;
-            mix-blend-mode: difference;
         }
     }
 }
@@ -43,6 +43,7 @@ nav {
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    z-index: 10;
 }
 .dot {
     position: fixed;
@@ -52,6 +53,7 @@ nav {
     border-radius: 100%;
     pointer-events: none;
     transition: 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    z-index: 10;
 }
 
 // Homepage style
@@ -99,6 +101,20 @@ nav {
             span {
                 color: $ACCENT;
             }
+
+            i {
+                animation: blink 0.8s linear infinite;
+            }
+        }
+    }
+
+    @keyframes blink {
+        0%,
+        100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
         }
     }
 
@@ -389,7 +405,7 @@ nav {
             img {
                 @include fullSize();
                 object-fit: cover;
-                opacity: 0.15;
+                opacity: 0.5;
             }
         }
     }

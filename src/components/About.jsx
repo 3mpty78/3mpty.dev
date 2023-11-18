@@ -1,9 +1,10 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 
 // Import des images
 import texture from "../assets/img/texture.png";
 import ichigoat from "../assets/img/ichigo_pixel.png";
-import { Parallax } from "react-scroll-parallax";
+import thumb from "../assets/img/gif/thumb.gif";
 
 export default function About() {
     return (
@@ -15,14 +16,14 @@ export default function About() {
                 <Parallax speed={10} className="first">
                     <img src={texture} alt="Texture background image" />
                 </Parallax>
-                <Parallax speed={0} className="second">
+                <Parallax speed={5} className="second">
                     <img
                         src={ichigoat}
                         alt="Image of Kurosaki ichigo from Bleach (manga)"
                     />
                 </Parallax>
             </div>
-            <div className="biography">
+            <div data-aos="fade-up" className="biography">
                 <p>
                     Hi 👋, <br /> <br /> I'm Aurélien, a 27 years old web
                     developer enthusiast currently pursuing my studies. <br />{" "}
@@ -34,6 +35,7 @@ export default function About() {
                     <br />
                     Let's create amazing digital experiences together !
                 </p>
+                <br />
             </div>
         </div>
     );

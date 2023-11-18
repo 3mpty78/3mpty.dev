@@ -2,8 +2,7 @@ import React from "react";
 
 // Import des images
 import texture from "../assets/img/texture.png";
-// import spike from "../assets/img/spike.png";
-import spike from "../assets/img/gif/spikeGif_dotted.gif";
+import totoro from "../assets/img/gif/totoro_n&b.gif";
 
 // Import des icons
 import { FiGithub } from "react-icons/fi";
@@ -67,7 +66,7 @@ export default function Contact() {
                 </Parallax>
                 <Parallax speed={15} className="second">
                     <img
-                        src={spike}
+                        src={totoro}
                         alt="Image of Kurosaki ichigo from Bleach (manga)"
                     />
                 </Parallax>

@@ -8,10 +8,10 @@ import baudic from "../assets/img/mockups/baudic_3.png";
 
 const projects = [
     {
-        name: "Ronan DERUET",
-        category: "Portfolio",
-        image: ronan,
-        link: "https://rawnan.vercel.app/",
+        name: "BAUDIC Taxis",
+        category: "Showcase website",
+        image: baudic,
+        link: "https://baudictaxis.vercel.app/",
     },
     {
         name: "Empty7",
@@ -26,10 +26,10 @@ const projects = [
         link: "https://jeunepauvre.vercel.app/",
     },
     {
-        name: "BAUDIC Taxis",
-        category: "Showcase website",
-        image: baudic,
-        link: "https://baudictaxis.vercel.app/",
+        name: "Ronan DERUET",
+        category: "Portfolio",
+        image: ronan,
+        link: "https://rawnan.vercel.app/",
     },
 ];
 
@@ -39,7 +39,7 @@ export default function Work() {
             <h2>
                 Some of my <span>work</span>_
             </h2>
-            <div className="worksContainer">
+            <div data-aos="fade-up" className="worksContainer">
                 {projects.map((project, id) => (
                     <a
                         href={project.link}

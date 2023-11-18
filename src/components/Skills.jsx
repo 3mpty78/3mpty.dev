@@ -16,44 +16,85 @@ const iconStyle = {
     height: "50px",
 };
 
+const responsiveSize = {
+    width: "30px",
+    height: "30px",
+};
+
 // Tableau de skills
 const designSkills = [
     {
-        icon: <FaFigma style={iconStyle} />,
+        icon: (
+            <FaFigma
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "Figma",
     },
     {
-        icon: <SiAdobephotoshop style={iconStyle} />,
+        icon: (
+            <SiAdobephotoshop
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "Photoshop",
     },
     {
-        icon: <SiAdobeillustrator style={iconStyle} />,
+        icon: (
+            <SiAdobeillustrator
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "Photoshop",
     },
     {
-        icon: <SiCanva style={iconStyle} />,
+        icon: (
+            <SiCanva
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "Canva",
     },
 ];
 const devSkills = [
     {
-        icon: <FaHtml5 style={iconStyle} />,
+        icon: (
+            <FaHtml5
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "HTML 5",
     },
     {
-        icon: <FaCss3Alt style={iconStyle} />,
+        icon: (
+            <FaCss3Alt
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "CSS 3",
     },
     {
-        icon: <SiSass style={iconStyle} />,
+        icon: (
+            <SiSass
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "Sass",
     },
     {
-        icon: <IoLogoJavascript style={iconStyle} />,
+        icon: (
+            <IoLogoJavascript
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "Javascript",
     },
     {
-        icon: <FaReact style={iconStyle} />,
+        icon: (
+            <FaReact
+                style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
+            />
+        ),
         name: "React",
     },
 ];

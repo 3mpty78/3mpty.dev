@@ -18,6 +18,12 @@ const iconStyle = {
     color: "91ef58",
 };
 
+const responsive = {
+    width: "15px",
+    height: "15px",
+    color: "#91EF58",
+};
+
 const socials = [
     {
         name: "Instagram",
@@ -73,7 +79,7 @@ export default function Contact() {
             </div>
             <div className="cathy">
                 <CiHeart
-                    style={{ color: "91ef58", width: "30px", height: "30px" }}
+                    style={window.innerWidth < "500px" ? iconStyle : responsive}
                 />
                 <p>
                     Inspired by the work of{" "}

@@ -24,6 +24,10 @@ nav {
         justify-content: flex-end;
         gap: 30px;
 
+        @media screen and (max-width: 750px) {
+            justify-content: center;
+        }
+
         li {
             font-family: Spacer;
             font-size: 18px;
@@ -44,6 +48,10 @@ nav {
     transform: translate(-50%, -50%);
     transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     z-index: 10;
+
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
 }
 .dot {
     position: fixed;
@@ -54,6 +62,10 @@ nav {
     pointer-events: none;
     transition: 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     z-index: 10;
+
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
 }
 
 // Homepage style
@@ -68,6 +80,13 @@ nav {
     background: $ACCENT;
     filter: blur(50px) opacity(0.15);
     overflow: hidden;
+
+    @media screen and (max-width: 750px) {
+        width: 40vh;
+        height: 40vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 #home {
     height: 100vh;
@@ -77,6 +96,13 @@ nav {
     justify-content: space-between;
     position: relative;
 
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 120px;
+    }
+
     .title {
         display: flex;
         flex-direction: column;
@@ -85,9 +111,22 @@ nav {
         width: fit-content;
         height: 100%;
 
+        @media screen and (max-width: 900px) {
+            height: fit-content;
+        }
+        @media screen and (max-width: 500px) {
+            height: fit-content;
+            align-items: center;
+        }
+
         h1 {
             font-family: Gracheva;
             font-size: 8vw;
+
+            @media screen and (max-width: 500px) {
+                font-size: 20vw;
+                text-align: center;
+            }
 
             span {
                 color: $ACCENT;
@@ -97,6 +136,11 @@ nav {
         h2 {
             font-family: Spacer;
             font-size: 22px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+                text-align: center;
+            }
 
             span {
                 color: $ACCENT;
@@ -120,8 +164,17 @@ nav {
 
     .images {
         position: relative;
-        width: 500px;
-        height: 500px;
+        width: 25vw;
+        height: 25vw;
+
+        @media screen and (max-width: 900px) {
+            width: 35vw;
+            height: 35vw;
+        }
+        @media screen and (max-width: 500px) {
+            width: 45vw;
+            height: 45vw;
+        }
 
         .first {
             @include fullSize();
@@ -139,6 +192,11 @@ nav {
             right: 30px;
             bottom: 30px;
             box-shadow: 0 0 20px $BLACK;
+
+            @media screen and (max-width: 500px) {
+                right: 10px;
+                bottom: 10px;
+            }
 
             img {
                 @include fullSize();
@@ -158,14 +216,31 @@ nav {
     gap: 300px;
     position: relative;
 
+    @media screen and (max-width: 1250px) {
+        gap: 150px;
+    }
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        gap: 60px;
+    }
+
     h2 {
         @include h2();
     }
 
     .images {
         position: relative;
-        width: 500px;
-        height: 500px;
+        width: 25vw;
+        height: 25vw;
+
+        @media screen and (max-width: 900px) {
+            width: 35vw;
+            height: 35vw;
+        }
+        @media screen and (max-width: 500px) {
+            width: 45vw;
+            height: 45vw;
+        }
 
         .first {
             @include fullSize();
@@ -185,6 +260,11 @@ nav {
             background: $BLACK;
             box-shadow: 0 0 20px $BLACK;
 
+            @media screen and (max-width: 500px) {
+                top: 10px;
+                left: 10px;
+            }
+
             img {
                 @include fullSize();
                 object-fit: cover;
@@ -197,10 +277,28 @@ nav {
         bottom: 0;
         width: 600px;
 
+        @media screen and (max-width: 1250px) {
+            width: 450px;
+        }
+        @media screen and (max-width: 900px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 650px) {
+            width: 75%;
+        }
+        @media screen and (max-width: 400px) {
+            width: 100%;
+        }
+
         p {
             font-family: Raleway;
             font-size: 18px;
             opacity: 0.75;
+
+            @media screen and (max-width: 900px) {
+                font-size: 16px;
+                text-align: justify;
+            }
 
             span {
                 opacity: 1;
@@ -230,12 +328,39 @@ nav {
         column-gap: 250px;
         z-index: 2;
 
+        @media screen and (max-width: 1300px) {
+            column-gap: 120px;
+        }
+        @media screen and (max-width: 1150px) {
+            column-gap: 60px;
+        }
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+
         a {
             .imageContainer {
                 width: 500px;
                 height: 300px;
                 position: relative;
                 background-color: $ACCENT;
+
+                @media screen and (max-width: 1150px) {
+                    width: 400px;
+                    height: 250px;
+                }
+                @media screen and (max-width: 900px) {
+                    width: 500px;
+                    height: 300px;
+                }
+                @media screen and (max-width: 650px) {
+                    width: 400px;
+                    height: 250px;
+                }
+                @media screen and (max-width: 450px) {
+                    width: 300px;
+                    height: 200px;
+                }
 
                 &:hover img {
                     bottom: 15px;
@@ -279,9 +404,20 @@ nav {
             justify-content: space-between;
             gap: 30px;
 
+            @media screen and (max-width: 650px) {
+                gap: 15px;
+                position: relative;
+                flex-direction: column;
+            }
+
             p {
                 font-family: Spacer;
                 font-size: 8vw;
+
+                @media screen and (max-width: 650px) {
+                    font-size: 20vw;
+                    text-align: left;
+                }
             }
 
             img {
@@ -291,6 +427,10 @@ nav {
                 border-radius: 120px;
                 filter: brightness(1.5) saturate(2) hue-rotate(-30deg)
                     contrast(1.2) drop-shadow(0 0 10px $BLACK);
+
+                @media screen and (max-width: 650px) {
+                    width: 100%;
+                }
             }
         }
 
@@ -298,12 +438,26 @@ nav {
             @extend .line1;
             flex-direction: row-reverse;
 
+            @media screen and (max-width: 650px) {
+                gap: 15px;
+                position: relative;
+                flex-direction: column;
+            }
+
             p {
                 font-family: Gracheva;
+
+                @media screen and (max-width: 650px) {
+                    font-size: 20vw;
+                    text-align: right;
+                }
             }
 
             img {
                 width: 15vw;
+                @media screen and (max-width: 650px) {
+                    width: 100%;
+                }
             }
         }
     }
@@ -315,10 +469,17 @@ nav {
     height: 100vh;
     gap: 60px;
     overflow-x: hidden;
+    width: 100%;
+    padding: 0;
 
     .marquee {
         display: flex;
         padding: 30px 0;
+        width: 100%;
+
+        @media screen and (max-width: 900px) {
+            padding: 15px 0;
+        }
 
         &:nth-child(1) {
             border-top: 1px solid $GRAY;
@@ -332,6 +493,10 @@ nav {
             align-items: center;
             gap: 30px;
             margin: 0 120px;
+
+            @media screen and (max-width: 900px) {
+                margin: 0 60px;
+            }
 
             p {
                 font-family: Gracheva;
@@ -350,12 +515,39 @@ nav {
     position: relative;
     padding: 0 240px;
 
+    @media screen and (max-width: 1100px) {
+        padding: 0 120px;
+    }
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+    @media screen and (max-width: 500px) {
+        height: auto;
+        padding: 0 30px;
+    }
+
     h2 {
         font-family: SPACER R;
         font-size: 120px;
         position: absolute;
         top: 30px;
         left: 30px;
+
+        @media screen and (max-width: 1100px) {
+            font-size: 80px;
+        }
+
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+        @media screen and (max-width: 500px) {
+            position: relative;
+            font-size: 60px;
+            top: 0;
+            left: 0;
+        }
 
         span {
             color: $ACCENT;
@@ -366,6 +558,15 @@ nav {
         display: flex;
         flex-direction: column;
         gap: 60px;
+
+        @media screen and (max-width: 750px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        @media screen and (max-width: 450px) {
+            grid-template-columns: 1fr;
+        }
 
         a {
             display: flex;
@@ -381,8 +582,17 @@ nav {
 
     .images {
         position: relative;
-        width: 500px;
-        height: 500px;
+        width: 25vw;
+        height: 25vw;
+
+        @media screen and (max-width: 750px) {
+            width: 35vw;
+            height: 35vw;
+        }
+        @media screen and (max-width: 450px) {
+            width: 45vw;
+            height: 45vw;
+        }
 
         .first {
             @include fullSize();
@@ -402,6 +612,11 @@ nav {
             background: $BLACK;
             box-shadow: 0 0 20px $BLACK;
 
+            @media screen and (max-width: 450px) {
+                right: 15px;
+                top: -30px;
+            }
+
             img {
                 @include fullSize();
                 object-fit: cover;
@@ -417,6 +632,23 @@ nav {
         display: flex;
         gap: 30px;
         align-items: center;
+
+        @media screen and (max-width: 1100px) {
+            left: 120px;
+        }
+        @media screen and (max-width: 750px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media screen and (max-width: 450px) {
+            position: relative;
+            text-align: center;
+            font-size: 8px;
+            gap: 10px;
+            margin-top: 60px;
+            left: 0;
+            transform: none;
+        }
 
         p {
             font-family: Raleway;

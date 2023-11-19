@@ -14,7 +14,7 @@ export default function Home() {
                         CORRE <span>Aurelien</span>
                     </h1>
                     <h2>
-                        <span>Front-end</span> developer<i>_</i>
+                        <span>Front-end</span> developer student<i>_</i>
                     </h2>
                 </div>
                 <div className="images">

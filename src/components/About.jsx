@@ -26,11 +26,10 @@ export default function About() {
             <div data-aos="fade-up" className="biography">
                 <p>
                     Hi 👋, <br /> <br /> I'm Aurélien, a 27 years old web
-                    developer enthusiast currently pursuing my studies. <br />{" "}
-                    <br /> My main focus is on honing my skills in{" "}
-                    <span>front-end development</span>, particularly with{" "}
-                    <span>React</span>. I'm also excited about diving into
-                    mobile development, with a keen interest in{" "}
+                    developer student. <br /> <br /> My main focus is on honing
+                    my skills in <span>front-end development</span>,
+                    particularly with <span>React</span>. I'm also excited about
+                    diving into mobile development, with a keen interest in{" "}
                     <span>React Native</span> and <span>Swift</span>. <br />{" "}
                     <br />
                     Let's create amazing digital experiences together !

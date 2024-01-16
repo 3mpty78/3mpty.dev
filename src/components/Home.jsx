@@ -3,7 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 
 // Import des images
 import texture from "../assets/img/texture.png";
-import profilPicture from "../assets/img/ProfilPicture.png";
+import profilPicture from "../assets/img/new_pp.png";
 
 export default function Home() {
     return (

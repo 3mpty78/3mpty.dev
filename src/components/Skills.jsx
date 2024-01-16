@@ -45,7 +45,7 @@ const designSkills = [
                 style={window.innerWidth < "500px" ? iconStyle : responsiveSize}
             />
         ),
-        name: "Photoshop",
+        name: "Illustrator",
     },
     {
         icon: (

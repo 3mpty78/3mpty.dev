@@ -5,8 +5,22 @@ import ronan from "../assets/img/mockups/ronan.png";
 import empty7 from "../assets/img/mockups/empty.png";
 import jeunepauvre from "../assets/img/mockups/ypa-3.png";
 import baudic from "../assets/img/mockups/baudic_3.png";
+import flowerz from "../assets/img/mockups/flowerz.png";
+import next from "../assets/img/mockups/next.png";
 
 const projects = [
+    {
+        name: "Flowerz",
+        category: "Showcase website",
+        image: flowerz,
+        link: "https://flowerz.vercel.app/",
+    },
+    {
+        name: "Next clothing | Design only",
+        category: "e-shop",
+        image: next,
+        link: "https://www.instagram.com/p/C0smYAAoGuR/",
+    },
     {
         name: "BAUDIC Taxis",
         category: "Showcase website",
